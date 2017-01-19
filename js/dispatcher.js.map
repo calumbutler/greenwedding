@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/js/dispatcher.js"],"names":[],"mappings":";;;;;;;;;;;AACA,SAAO,CAAC,GAAG,CAAC,sBAAS,CAAC,CAAA;AACf,MAAM,UAAU,GAAG,sBAAS,CAAC","file":"dispatcher.js","sourcesContent":["import alt from 'alt';\nconsole.log(new alt())\nexport const dispatcher = new alt();\n"]}
