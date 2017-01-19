@@ -1,0 +1,36 @@
+.header--article{
+    margin: 0;
+    padding: 40px 80px;
+    background-size: 100%;
+    height: 670px;
+
+    color: $emerald;
+    header{
+      height: 400px;
+      background: white url('../images/kb.jpg') no-repeat center;
+    }
+}
+.header--title{
+  font-family: 'Poiret One', cursive;
+  font-size: 4em;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+.header--navigation{
+    list-style: none;
+    font-size: 24px;
+    line-height: 30px;
+    color: $emerald;
+    li{
+      height: 30px;
+      padding: 5px 10px;
+      border-right: 1px solid #fff;
+      cursor: pointer;
+      color: $emerald;
+    }
+    li.last{
+      border-right: 0px solid #fff;
+    }
+}

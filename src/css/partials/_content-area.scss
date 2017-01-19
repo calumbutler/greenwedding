@@ -1,0 +1,28 @@
+.content{
+  padding: 0px 0;
+}
+
+.content--image-container{
+  width: 350px;
+  max-height: 200px;
+  margin: 10px 10px;
+  overflow: hidden;
+}
+.content--image-container__small{
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  margin: 10px 10px;
+}
+.content--image-container__large{
+  width: 450px;
+  height: 200px;
+  overflow: hidden;
+  margin: 10px 10px;
+}
+
+.content--image{
+  width: 100%;
+  min-height: 250px;
+  cursor: pointer;
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html><html><head><link href="css/style.css" rel="stylesheet"><script async src="js/vendor/babel-polyfill/browser-polyfill.js"></script><script async>var require = {config: function (c) {require = c}};
+var url = URL = location.href.replace(/\/[^/]+$/, '');
+require.config({
+  baseUrl: URL,
+  isDebug: false,
+  async: true,
+  paths:{
+    'shared': URL + 'js/shared',
+    'shim': URL + 'shim',
+    //'vendor': URL + 'vendor',
+    'components': URL + 'js/components',
+    'react': URL + 'js/vendor/react/react',
+    'react-dom': URL + 'js/vendor/react/react-dom',
+    'alt': URL + 'js/vendor/alt/dist/alt'
+  }
+});
+</script></head><body id="content" class="content"><div id="header" class="header--container"></div><div id="home" class="home--container"></div><div id="footer" class="footer--container"></div></body><script async="async" data-main="js/main.js" src="js/vendor/requirejs/require.js" /></html>

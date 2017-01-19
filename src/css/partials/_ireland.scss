@@ -1,0 +1,40 @@
+.ireland-container {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+}
+
+.ireland--inner-container{
+  background: rgba(240,240,240, 0.75);
+  color: $charcoal;
+  height: auto;
+  width: 960px;
+  margin: 20px 0;
+}
+
+.venue-section{
+  width: 50%;
+}
+
+
+.venue{
+  background: url('../images/Dublin-City-Hall-Wedding.png') no-repeat;
+  background-size: cover;
+}
+
+.afters{
+  background: #white;
+}
+.mapboxgl-map{
+  background: #111;
+  height: 100%;
+  width: calc(100% - 40px);
+}
+.hotels{
+    background: $navy-blue;
+    color: white
+}
+.gold{
+  background-color: $gold;
+}
