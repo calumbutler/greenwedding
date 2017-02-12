@@ -39,9 +39,7 @@ define(["dojo/_base/lang","dojo/_base/array", "dojo/_base/declare", "dojo/on", "
 			//		mouse event
 			var x = e.clientX;
 			var y = e.clientY;
-     // 3.14 NOTE: 
-     // -- Updated onMove to pass event       
-			this.host.onMove(this, {dx: x - this.lastX, dy: y - this.lastY}, e);
+			this.host.onMove(this, {dx: x - this.lastX, dy: y - this.lastY});
 			this.lastX = x;
 			this.lastY = y;
 			event.stop(e);

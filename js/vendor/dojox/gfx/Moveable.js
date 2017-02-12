@@ -1,6 +1,6 @@
 define(["dojo/_base/lang","dojo/_base/declare","dojo/_base/array","dojo/_base/event","dojo/topic","dojo/touch",
-  "dojo/dom-class","dojo/_base/window","./Mover","dojo/mouse"],
-  function(lang,declare,arr,event,topic,touch,domClass,win,Mover,Mouse){
+	"dojo/dom-class","dojo/_base/window","./Mover"],
+  function(lang,declare,arr,event,topic,touch,domClass,win,Mover){
 
 	/*=====
 	var __MoveableCtorArgs = declare("dojox.gfx.__MoveableCtorArgs", null, {
@@ -29,7 +29,6 @@ define(["dojo/_base/lang","dojo/_base/declare","dojo/_base/array","dojo/_base/ev
 			this.shape = shape;
 			this.delay = (params && params.delay > 0) ? params.delay : 0;
 			this.mover = (params && params.mover) ? params.mover : Mover;
-      this.leftButtonOnly = params && params.leftButtonOnly;
 			this.events = [
 				this.shape.on(touch.press, lang.hitch(this, "onMouseDown"))
 				// cancel text selection and text dragging
@@ -61,9 +60,7 @@ define(["dojo/_base/lang","dojo/_base/declare","dojo/_base/array","dojo/_base/ev
 				this._lastX = e.clientX;
 				this._lastY = e.clientY;
 			}else{
-        if (!this.leftButtonOnly || Mouse.isLeft(e)) {
-          new this.mover(this.shape, e, this);
-        }
+				new this.mover(this.shape, e, this);
 			}
 			event.stop(e);
 		},
@@ -115,7 +112,7 @@ define(["dojo/_base/lang","dojo/_base/declare","dojo/_base/array","dojo/_base/ev
 
 			// default implementation does nothing
 		},
-		onMove: function(/* dojox/gfx/Mover */ mover, /* Object */ shift, /* Event */ evt){
+		onMove: function(/* dojox/gfx/Mover */ mover, /* Object */ shift){
 			// summary:
 			//		called during every move notification,
 			//		should actually move the node, can be overwritten.
@@ -123,10 +120,7 @@ define(["dojo/_base/lang","dojo/_base/declare","dojo/_base/array","dojo/_base/ev
 			//		A Mover instance that fired the event.
 			// shift:
 			//		An object as {dx,dy} that represents the shift.
-      // 3.14 NOTE (Fixes snapping in IE): 
-      // -- Updated onMove to accept evt from Mover.js
-      // -- Passes evt along to onMoving
-			this.onMoving(mover, shift, evt);
+			this.onMoving(mover, shift);
 			this.shape.applyLeftTransform(shift);
 			this.onMoved(mover, shift);
 		},

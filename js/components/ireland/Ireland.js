@@ -1,4 +1,4 @@
-define(['exports', 'module', 'react', 'components/ireland/actions', 'components/ireland/store', 'scrollmagic', 'components/ireland/map'], function (exports, module, _react, _componentsIrelandActions, _componentsIrelandStore, _scrollmagic, _componentsIrelandMap) {
+define(['exports', 'module', 'react', 'components/ireland/actions', 'components/ireland/store', 'scrollmagic', 'components/ireland/map', 'components/ireland/playlist'], function (exports, module, _react, _componentsIrelandActions, _componentsIrelandStore, _scrollmagic, _componentsIrelandMap, _componentsIrelandPlaylist) {
 	'use strict';
 
 	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
@@ -58,6 +58,7 @@ define(['exports', 'module', 'react', 'components/ireland/actions', 'components/
 				}
 
 				(0, _componentsIrelandMap.createMap)();
+				(0, _componentsIrelandPlaylist.initPlaylist)();
 			}
 		}, {
 			key: 'componentDidUpdate',
@@ -78,9 +79,13 @@ define(['exports', 'module', 'react', 'components/ireland/actions', 'components/
 							_React['default'].createElement(
 								'h1',
 								{ className: 'text-center' },
+								'Venue'
+							),
+							_React['default'].createElement(
+								'h2',
+								{ className: 'text-center' },
 								'Dublin City Hall'
 							),
-							'\\',
 							_React['default'].createElement(
 								'p',
 								null,
@@ -101,6 +106,11 @@ define(['exports', 'module', 'react', 'components/ireland/actions', 'components/
 							{ className: 'relative panel--inner padding' },
 							_React['default'].createElement(
 								'h1',
+								{ className: 'text-center' },
+								'Reception'
+							),
+							_React['default'].createElement(
+								'h2',
 								{ className: 'text-center' },
 								'Fallon & byrnes'
 							)
@@ -142,7 +152,7 @@ define(['exports', 'module', 'react', 'components/ireland/actions', 'components/
 							_React['default'].createElement(
 								'h1',
 								{ className: 'text-center' },
-								'Ireland'
+								'Playlist'
 							)
 						)
 					)

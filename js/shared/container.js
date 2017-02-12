@@ -49,6 +49,7 @@ define(['exports', 'module', 'shared/app', 'shared/footer', 'components/ireland/
               _React['default'].createElement(
                 _reactRouter.Route,
                 { path: '/', component: _App['default'] },
+                _React['default'].createElement(_reactRouter.Route, { path: '/', component: _Ireland['default'] }),
                 _React['default'].createElement(_reactRouter.Route, { path: '/ireland/', component: _Ireland['default'] }),
                 _React['default'].createElement(_reactRouter.Route, { path: '/dc/', component: _DC['default'] }),
                 _React['default'].createElement(_reactRouter.Route, { path: '/stlouis/', component: _Stlouis['default'] })
