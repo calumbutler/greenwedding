@@ -13,6 +13,7 @@ export default class Container extends React.Component {
         <div id="container">
           <Router history={hashHistory}>
             <Route path="/" component={App}>
+              <Route path="/" component={Ireland}/>
               <Route path="/ireland/" component={Ireland}/>
               <Route path="/dc/" component={DC} />
               <Route path="/stlouis/" component={Stlouis}/>

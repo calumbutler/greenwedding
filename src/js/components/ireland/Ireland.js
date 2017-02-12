@@ -3,6 +3,8 @@ import {irelandActions} from 'components/ireland/actions';
 import {irelandStore} from 'components/ireland/store';
 import ScrollMagic from 'scrollmagic';
 import {createMap} from 'components/ireland/map';
+import {initPlaylist} from 'components/ireland/playlist';
+
 //console.log(ScrollMagic)
 var controller = new ScrollMagic.Controller({
 			globalSceneOptions: {
@@ -40,7 +42,8 @@ export default class Ireland extends React.Component{
 			.addTo(controller);
 		}
 
-		createMap()
+		createMap();
+		initPlaylist();
 	}
 	componentDidUpdate(){
 	}
@@ -50,7 +53,8 @@ export default class Ireland extends React.Component{
 				<div id='ireland' className='ireland-container'>
 					<section id='ireland1' className='panel venue'>
 						<div className='relative panel--inner panel--inner__white flex flex-column padding'>
-							<h1 className='text-center'>Dublin City Hall</h1>\
+							<h1 className='text-center'>Venue</h1>
+							<h2 className='text-center'>Dublin City Hall</h2>
 							<p>City Hall is an outstanding example of the Georgian architecture for which Dublin is world-renowned. Audioguides and leaflets are available in English, Irish, German, Spanish, Italian and French.</p>
 
 							<p>The vaults now host the multi-media exhibition, ‘Dublin’s City Hall: The Story of the Capital’. This exhibition traces the evolution of Ireland’s capital city, from before the Anglo-Norman invasion of 1170 to the present day.</p>
@@ -58,7 +62,8 @@ export default class Ireland extends React.Component{
 					</section>
 					<section id='ireland2' className='panel afters'>
 						<div className='relative panel--inner padding'>
-							<h1 className='text-center'>Fallon & byrnes</h1>
+							<h1 className='text-center'>Reception</h1>
+							<h2 className='text-center'>Fallon & byrnes</h2>
 						</div>
 					</section>
 					<section className='panel hotels'>
@@ -75,7 +80,7 @@ export default class Ireland extends React.Component{
 					</section>
 					<section className='panel '>
 						<div className='relative panel--inner padding'>
-							<h1 className='text-center'>Ireland</h1>
+							<h1 className='text-center'>Playlist</h1>
 						</div>
 					</section>
 				</div>

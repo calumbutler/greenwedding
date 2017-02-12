@@ -31,7 +31,6 @@ define(['exports', 'module', 'react', 'react-router'], function (exports, module
 				return _React['default'].createElement(
 					'article',
 					{ className: 'header--article' },
-					_React['default'].createElement('header', { className: 'header--header flex flex-column justify-between' }),
 					_React['default'].createElement(
 						'h1',
 						{ className: 'header--title' },
@@ -39,7 +38,7 @@ define(['exports', 'module', 'react', 'react-router'], function (exports, module
 					),
 					_React['default'].createElement(
 						'h3',
-						{ className: 'text-center' },
+						{ className: 'header--hashtag text-center' },
 						'#GreenWedding'
 					),
 					_React['default'].createElement(
@@ -51,7 +50,7 @@ define(['exports', 'module', 'react', 'react-router'], function (exports, module
 							_React['default'].createElement(
 								_reactRouter.Link,
 								{ to: '/Ireland/' },
-								'Ireland'
+								'Wedding'
 							)
 						),
 						_React['default'].createElement(
@@ -60,7 +59,7 @@ define(['exports', 'module', 'react', 'react-router'], function (exports, module
 							_React['default'].createElement(
 								_reactRouter.Link,
 								{ to: '/dc/' },
-								'DC'
+								'DC Reception'
 							)
 						),
 						_React['default'].createElement(
@@ -69,7 +68,7 @@ define(['exports', 'module', 'react', 'react-router'], function (exports, module
 							_React['default'].createElement(
 								_reactRouter.Link,
 								{ to: '/stlouis/' },
-								'St. Louis'
+								'Registry'
 							)
 						)
 					)

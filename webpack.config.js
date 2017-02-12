@@ -63,6 +63,7 @@ module.exports = {
       'requirejs': path.join(__dirname , 'src/js/vendor/requirejs'),
       'mapbox-gl': path.join(__dirname , 'node_modules/mapbox-gl/dist/mapbox-gl'),
       'mapbox': path.join(__dirname , 'node_modules/mapbox.js'),
+      'spotify': path.join(__dirname , 'src/js/vendor/spotify-web-api-js/src/spotify-web-api'),
       //'esri':  path.join(__dirname , 'src/js/vendor/arcgis-js-api'),
       // 'dojo':  path.join(__dirname , 'src/js/vendor/dojo'),
       // 'dijit':  path.join(__dirname , 'src/js/vendor/dijit'),
