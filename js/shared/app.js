@@ -31,10 +31,8 @@ define(['exports', 'module', 'shared/header', 'shared/footer', 'react'], functio
       value: function render() {
         return _React['default'].createElement(
           'div',
-          null,
-          _React['default'].createElement(_Header['default'], null),
-          this.props.children,
-          _React['default'].createElement(_Footer['default'], null)
+          { className: 'app-container' },
+          this.props.children
         );
       }
     }]);
