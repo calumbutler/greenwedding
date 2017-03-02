@@ -122,6 +122,15 @@ button {
   min-height: 450px;
   color: #303d45; }
 
+.checkout {
+  color: #303d45; }
+  .checkout a {
+    color: #303d45; }
+  .checkout a:hover {
+    color: #303d45;
+    text-decoration: underline;
+    cursor: pointer; }
+
 .itinerary--inner {
   max-height: 400px; }
 
@@ -130,9 +139,13 @@ button {
   .itinerary--list li {
     text-align: center;
     padding: 20px; }
+    .itinerary--list li b {
+      font-size: 20px; }
     .itinerary--list li a {
       text-decoration: underline !important;
       color: #303d45; }
+    .itinerary--list li a:hover {
+      color: #800000; }
 
 .venue {
   background: #024a47;

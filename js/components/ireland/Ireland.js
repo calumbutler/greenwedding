@@ -375,104 +375,98 @@ define(['exports', 'module', 'react', 'components/ireland/actions', 'components/
 					),
 					_React['default'].createElement(
 						'section',
-						{ id: 'ireland4', className: 'parallaxParent panel venue' },
+						{ id: 'ireland4', className: 'parallaxParent panel checkout' },
 						_React['default'].createElement(
 							'div',
 							{ className: 'relative panel--inner padding' },
 							_React['default'].createElement(
 								'h1',
 								{ className: 'text-center' },
-								'Hotels'
+								'Things to check out'
 							),
 							_React['default'].createElement(
 								'div',
-								{ className: 'flex' },
+								{ className: 'flex flex-wrap justify-around' },
 								_React['default'].createElement(
 									'div',
-									{ className: 'hotel--container text-center' },
+									null,
 									_React['default'].createElement(
-										'h2',
-										null,
-										_React['default'].createElement(
-											'a',
-											{ href: 'http://theclarence.ie/' },
-											' The Clarence '
-										)
-									),
-									_React['default'].createElement(
-										'p',
-										null,
-										'6-8 Wellington Quay,'
-									),
-									_React['default'].createElement(
-										'p',
-										null,
-										'Dublin 2,'
-									),
-									_React['default'].createElement(
-										'p',
-										null,
-										'Dublin'
-									),
-									_React['default'].createElement('img', { src: 'images/theclarence.jpeg', height: '300', width: '275' })
+										'a',
+										{ href: 'https://www.nytimes.com/2014/11/16/travel/things-to-do-in-36-hours-in-dublin-ireland.html' },
+										'New York Times: 36 Hours in Dublin'
+									)
 								),
 								_React['default'].createElement(
 									'div',
-									{ className: 'hotel--container text-center' },
+									null,
 									_React['default'].createElement(
-										'h2',
+										'a',
 										null,
-										_React['default'].createElement(
-											'a',
-											{ href: 'http://www.thewestindublin.com/' },
-											' The Westin '
-										)
-									),
-									_React['default'].createElement(
-										'p',
-										null,
-										'College Green,'
-									),
-									_React['default'].createElement(
-										'p',
-										null,
-										'Westmoreland Street,'
-									),
-									_React['default'].createElement(
-										'p',
-										null,
-										'Dublin, D02 HR67'
-									),
-									_React['default'].createElement('img', { src: 'images/westin.jpg', height: '300', width: '275' })
+										'Avoca'
+									)
 								),
 								_React['default'].createElement(
 									'div',
-									{ className: 'hotel--container text-center' },
+									null,
 									_React['default'].createElement(
-										'h2',
+										'a',
 										null,
-										_React['default'].createElement(
-											'a',
-											{ href: 'http://www.themorgan.com/' },
-											' The Morgan '
-										)
-									),
+										'Guinness'
+									)
+								),
+								_React['default'].createElement(
+									'div',
+									null,
 									_React['default'].createElement(
-										'p',
+										'a',
 										null,
-										'College Green,'
-									),
+										'Guinness'
+									)
+								),
+								_React['default'].createElement(
+									'div',
+									null,
 									_React['default'].createElement(
-										'p',
+										'a',
 										null,
-										'Westmoreland Street,'
-									),
+										'Book of Kells'
+									)
+								),
+								_React['default'].createElement(
+									'div',
+									null,
 									_React['default'].createElement(
-										'p',
+										'a',
 										null,
-										'Dublin, D02 HR67'
-									),
-									_React['default'].createElement('img', { src: 'images/themorgan.jpeg', height: '300', width: '275' })
+										'St. Stephens Green'
+									)
+								),
+								_React['default'].createElement(
+									'div',
+									null,
+									_React['default'].createElement(
+										'a',
+										null,
+										'Lovindublin.com'
+									)
+								),
+								_React['default'].createElement(
+									'div',
+									null,
+									_React['default'].createElement(
+										'a',
+										null,
+										'Totallydublin.ie'
+									)
+								),
+								_React['default'].createElement(
+									'div',
+									null,
+									_React['default'].createElement(
+										'a',
+										null,
+										'Dean Hotel bar Sophie’S 360 views of Dublin (skip the guiness tour and get your city views here)'
+									)
 								)
 							)
 						)
