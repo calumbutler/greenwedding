@@ -1,5 +1,5 @@
 import App from 'shared/app';
-import Footer from 'shared/footer';
+import Header from 'shared/Header';
 import Ireland from 'components/ireland/Ireland';
 import DC from 'components/dc/DC';
 import Stlouis from 'components/stlouis/Stlouis';
@@ -11,12 +11,12 @@ export default class Container extends React.Component {
     return (
       <div id="page" className="app hfeed site">
         <div id="container">
-          <Router history={hashHistory}>
-            <Route path="/" component={App}>
-              <Route path="/" component={Ireland}/>
-              <Route path="/ireland/" component={Ireland}/>
+          <Router history={hashHistory} className='router'>
+            <Route path="/" component={App} className='route'>
+              <IndexRoute component={Header} className='contain'/>
+              <Route path="/wedding/" component={Ireland}/>
               <Route path="/dc/" component={DC} />
-              <Route path="/stlouis/" component={Stlouis}/>
+              <Route path="/registry/" component={Stlouis}/>
             </Route>
           </Router>
 

@@ -13,12 +13,27 @@
 @include font-face('Oswald-Bold', 'fonts/Oswald-Bold', 'bold', $file-formats: ttf);
 @include font-face('Oswald-Light', 'fonts/Oswald-Light', 'light', $file-formats: ttf);
 
+.app-container, .app, #container{
+  height: 100%;
+}
+
+.overflow-hidden{
+  overflow: hidden;
+}
+
+.parallaxParent {
+		height: 100vh;
+		overflow: hidden;
+	}
+
+
 $Oswald-Regular: 'Oswald-Regular';
 body, html{
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
+  //overflow: hidden;
   font-family: 'Poiret One', cursive;
 }
 a{
@@ -26,7 +41,7 @@ a{
   color: white;
 }
 .panel {
-		height: 600px;
+		height: 130%;
 		width: 100%;
 }
 
@@ -65,7 +80,9 @@ a{
 .flex-row{
   flex-direction: row;
 }
-
+.flex-wrap{
+  .flex-wrap: wrap;
+}
 .justify-center{
   justify-content: center;
 }

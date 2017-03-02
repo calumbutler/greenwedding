@@ -13,6 +13,8 @@ define(['exports', 'module', 'react', 'react-router'], function (exports, module
 
 	var _React = _interopRequireDefault(_react);
 
+	//document.getElementById('content').classList.add('overflow-hidden');
+
 	var Header = (function (_React$Component) {
 		_inherits(Header, _React$Component);
 
@@ -31,47 +33,7 @@ define(['exports', 'module', 'react', 'react-router'], function (exports, module
 				return _React['default'].createElement(
 					'article',
 					{ className: 'header--article' },
-					_React['default'].createElement(
-						'h1',
-						{ className: 'header--title' },
-						'Kendall & Bart'
-					),
-					_React['default'].createElement(
-						'h3',
-						{ className: 'header--hashtag text-center' },
-						'#GreenWedding'
-					),
-					_React['default'].createElement(
-						'ul',
-						{ className: 'header--navigation flex flex-row justify-center' },
-						_React['default'].createElement(
-							'li',
-							null,
-							_React['default'].createElement(
-								_reactRouter.Link,
-								{ to: '/Ireland/' },
-								'Wedding'
-							)
-						),
-						_React['default'].createElement(
-							'li',
-							null,
-							_React['default'].createElement(
-								_reactRouter.Link,
-								{ to: '/dc/' },
-								'DC Reception'
-							)
-						),
-						_React['default'].createElement(
-							'li',
-							null,
-							_React['default'].createElement(
-								_reactRouter.Link,
-								{ to: '/stlouis/' },
-								'Registry'
-							)
-						)
-					)
+					_React['default'].createElement('img', { src: 'images/wedding.gif' })
 				);
 			}
 		}]);

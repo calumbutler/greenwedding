@@ -1,10 +1,16 @@
+
 .header--article{
     margin: 0;
-    height: 670px;
-    background: white url('../images/savethedate.jpg') no-repeat center;
+    height: 100%;
+    width: 100%;
     background-size: 100% 100%;
     color: white;
     position: relative;
+
+    img{
+      height: 100%;
+      width: 100%;
+    }
 }
 
 .header--hashtag{

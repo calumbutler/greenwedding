@@ -2,25 +2,57 @@
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  height: auto;
+  height: 100%;
+}
+
+.ireland--landing{
+    margin: 0;
+    height: 100% !important;
+    background: white url('../images/clean-background.jpg') no-repeat center;
+    background-size: 100% 100%;
+    width: 100% !important;
+    color: white;
+    position: relative;
 }
 
 .ireland--inner-container{
-  background: rgba(240,240,240, 0.75);
   color: $charcoal;
   height: auto;
   width: 960px;
   margin: 20px 0;
+}
+.hotels{
+  min-height: 1600px;
 }
 
 .venue-section{
   width: 50%;
 }
 
+.itinerary{
+  max-height: 450px;
+  min-height: 450px;
+  color: $charcoal;
+}
+.itinerary--inner{
+  max-height: 400px;
+}
+.itinerary--list{
+  list-style: none;
+  li{
+    text-align: center;
+    padding: 20px;
+    a{
+      text-decoration: underline !important;
+      color: $charcoal;
+    }
+  }
+}
 
 .venue{
-  background: url('../images/Dublin-City-Hall-Wedding.png') no-repeat;
+  background: $emerald;
   background-size: cover;
+  color: white;
 }
 
 .afters{
@@ -29,7 +61,7 @@
 .mapboxgl-map{
   background: #111;
   height: 100%;
-  width: calc(100% - 40px);
+  width: 100%
 }
 .hotels{
     background: $navy-blue;
@@ -37,4 +69,9 @@
 }
 .gold{
   background-color: $gold;
+}
+
+
+.hotel--container{
+  width: 33%;
 }

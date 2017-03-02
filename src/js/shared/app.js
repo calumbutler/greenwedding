@@ -6,12 +6,8 @@ import React from 'react';
 export default class App extends React.Component {
   render() {
     return (
-      <div>
-        <Header />
-
+      <div className='app-container'>
         {this.props.children}
-
-        <Footer />
       </div>
     );
   }
