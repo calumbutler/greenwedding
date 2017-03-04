@@ -1,4 +1,4 @@
-define(['exports', 'module', 'shared/app', 'shared/Header', 'components/ireland/Ireland', 'components/dc/DC', 'components/stlouis/Stlouis', 'react', 'react-router'], function (exports, module, _sharedApp, _sharedHeader, _componentsIrelandIreland, _componentsDcDC, _componentsStlouisStlouis, _react, _reactRouter) {
+define(['exports', 'module', 'shared/app', 'shared/Header', 'components/ireland/Ireland', 'components/dc/DC', 'components/rsvp/rsvp', 'components/stlouis/Stlouis', 'react', 'react-router'], function (exports, module, _sharedApp, _sharedHeader, _componentsIrelandIreland, _componentsDcDC, _componentsRsvpRsvp, _componentsStlouisStlouis, _react, _reactRouter) {
   'use strict';
 
   var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
@@ -18,6 +18,8 @@ define(['exports', 'module', 'shared/app', 'shared/Header', 'components/ireland/
   var _Ireland = _interopRequireDefault(_componentsIrelandIreland);
 
   var _DC = _interopRequireDefault(_componentsDcDC);
+
+  var _RSVP = _interopRequireDefault(_componentsRsvpRsvp);
 
   var _Stlouis = _interopRequireDefault(_componentsStlouisStlouis);
 
@@ -52,7 +54,8 @@ define(['exports', 'module', 'shared/app', 'shared/Header', 'components/ireland/
                 _React['default'].createElement(_reactRouter.IndexRoute, { component: _Header['default'], className: 'contain' }),
                 _React['default'].createElement(_reactRouter.Route, { path: '/wedding/', component: _Ireland['default'] }),
                 _React['default'].createElement(_reactRouter.Route, { path: '/dc/', component: _DC['default'] }),
-                _React['default'].createElement(_reactRouter.Route, { path: '/registry/', component: _Stlouis['default'] })
+                _React['default'].createElement(_reactRouter.Route, { path: '/registry/', component: _Stlouis['default'] }),
+                _React['default'].createElement(_reactRouter.Route, { path: '/rsvp/', component: _RSVP['default'] })
               )
             )
           )

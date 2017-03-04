@@ -114,6 +114,9 @@ button {
 .hotels {
   min-height: 1600px; }
 
+.rsvp {
+  height: 1200px !important; }
+
 .venue-section {
   width: 50%; }
 

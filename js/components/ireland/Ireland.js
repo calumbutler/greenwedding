@@ -473,16 +473,15 @@ define(['exports', 'module', 'react', 'components/ireland/actions', 'components/
 					),
 					_React['default'].createElement(
 						'section',
-						{ id: 'ireland5', className: 'parallaxParent panel map' },
+						{ id: 'ireland5', className: 'parallaxParent panel rsvp' },
 						_React['default'].createElement(
 							'div',
 							{ className: 'relative panel--inner padding' },
 							_React['default'].createElement(
 								'h1',
 								{ className: 'text-center' },
-								'Map'
-							),
-							_React['default'].createElement('div', { id: 'map' })
+								'RSVP'
+							)
 						)
 					),
 					_React['default'].createElement(
