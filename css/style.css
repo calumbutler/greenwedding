@@ -122,8 +122,9 @@ button {
 .hotels {
   min-height: 1600px; }
 
-.rsvp {
-  height: 1200px !important; }
+.map {
+  height: 1200px !important;
+  background: url("../images/texturedoverlay.png"); }
 
 .venue-section {
   width: 50%; }
@@ -133,7 +134,20 @@ button {
   min-height: 450px;
   color: #303d45; }
 
+.itinerary--inner {
+  background: url("../images/clover.png") no-repeat 20px 50%; }
+
+.hotels {
+  color: white;
+  background: #031e31;
+  background-size: 100%; }
+  .hotels .panel--inner {
+    background: url("../images/robby.png") no-repeat 50% 900px;
+    background-size: 25%; }
+
 .checkout {
+  background: url("../images/chicago.png") no-repeat 0 300px;
+  background-size: 100% 75%;
   color: #303d45; }
   .checkout a {
     color: #303d45; }
@@ -170,10 +184,6 @@ button {
   background: #111;
   height: 100%;
   width: 100%; }
-
-.hotels {
-  background: #031e31;
-  color: white; }
 
 .gold {
   background-color: #e7c07d; }

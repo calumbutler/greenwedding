@@ -450,14 +450,14 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 					),
 					_React['default'].createElement(
 						'section',
-						{ id: 'ireland5', className: 'parallaxParent panel rsvp' },
+						{ id: 'ireland5', className: 'parallaxParent panel map' },
 						_React['default'].createElement(
 							'div',
 							{ className: 'relative panel--inner padding' },
 							_React['default'].createElement(
 								'h1',
 								{ className: 'text-center' },
-								'RSVP'
+								'Map'
 							)
 						)
 					),
