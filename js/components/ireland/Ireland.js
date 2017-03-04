@@ -1,4 +1,4 @@
-define(['exports', 'module', 'react', 'components/ireland/actions', 'components/ireland/store', 'ScrollMagic', 'TweenMax', 'TweenLite', 'TimelineMax', 'TimelineLite', 'scrollmagic-setTween', 'scrollmagic-addIndicators', 'components/ireland/map', 'components/ireland/playlist', 'react-router'], function (exports, module, _react, _componentsIrelandActions, _componentsIrelandStore, _ScrollMagic, _TweenMax, _TweenLite, _TimelineMax, _TimelineLite, _scrollmagicSetTween, _scrollmagicAddIndicators, _componentsIrelandMap, _componentsIrelandPlaylist, _reactRouter) {
+define(['exports', 'module', 'react', 'components/navigation/navigation', 'components/ireland/actions', 'components/ireland/store', 'ScrollMagic', 'TweenMax', 'TweenLite', 'TimelineMax', 'TimelineLite', 'scrollmagic-setTween', 'scrollmagic-addIndicators', 'components/ireland/map', 'components/ireland/playlist', 'react-router'], function (exports, module, _react, _componentsNavigationNavigation, _componentsIrelandActions, _componentsIrelandStore, _ScrollMagic, _TweenMax, _TweenLite, _TimelineMax, _TimelineLite, _scrollmagicSetTween, _scrollmagicAddIndicators, _componentsIrelandMap, _componentsIrelandPlaylist, _reactRouter) {
 	'use strict';
 
 	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
@@ -12,6 +12,8 @@ define(['exports', 'module', 'react', 'components/ireland/actions', 'components/
 	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var _React = _interopRequireDefault(_react);
+
+	var _Navigation = _interopRequireDefault(_componentsNavigationNavigation);
 
 	var _ScrollMagic2 = _interopRequireDefault(_ScrollMagic);
 
@@ -92,6 +94,11 @@ define(['exports', 'module', 'react', 'components/ireland/actions', 'components/
 						),
 						_React['default'].createElement(
 							'h3',
+							{ className: 'header--date' },
+							'December 21st 2017'
+						),
+						_React['default'].createElement(
+							'h3',
 							{ className: 'header--hashtag text-center' },
 							_React['default'].createElement(
 								'a',
@@ -99,37 +106,7 @@ define(['exports', 'module', 'react', 'components/ireland/actions', 'components/
 								'#GreenWedding'
 							)
 						),
-						_React['default'].createElement(
-							'ul',
-							{ className: 'header--navigation flex flex-row justify-center' },
-							_React['default'].createElement(
-								'li',
-								null,
-								_React['default'].createElement(
-									_reactRouter.Link,
-									{ to: '/wedding/' },
-									'Wedding'
-								)
-							),
-							_React['default'].createElement(
-								'li',
-								null,
-								_React['default'].createElement(
-									_reactRouter.Link,
-									{ to: '/dc/' },
-									'DC Reception'
-								)
-							),
-							_React['default'].createElement(
-								'li',
-								null,
-								_React['default'].createElement(
-									_reactRouter.Link,
-									{ to: '/registry/' },
-									'Registry'
-								)
-							)
-						)
+						_React['default'].createElement(_Navigation['default'], null)
 					),
 					_React['default'].createElement(
 						'section',

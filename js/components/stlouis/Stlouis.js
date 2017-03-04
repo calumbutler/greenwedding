@@ -38,11 +38,7 @@ define(['exports', 'module', 'react', 'components/stlouis/actions', 'components/
 		}, {
 			key: 'render',
 			value: function render() {
-				return _React['default'].createElement(
-					'div',
-					null,
-					'stlouis'
-				);
+				return _React['default'].createElement('div', { className: 'stlouis--container' });
 			}
 		}]);
 

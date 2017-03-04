@@ -111,6 +111,14 @@ button {
   width: 960px;
   margin: 20px 0; }
 
+.header--date {
+  font-family: 'Poiret One', cursive;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 325px; }
+
 .hotels {
   min-height: 1600px; }
 

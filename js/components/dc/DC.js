@@ -38,11 +38,7 @@ define(['exports', 'module', 'react', 'components/dc/actions', 'components/dc/st
 		}, {
 			key: 'render',
 			value: function render() {
-				return _React['default'].createElement(
-					'div',
-					null,
-					'dc'
-				);
+				return _React['default'].createElement('div', { className: 'dc--container' });
 			}
 		}]);
 
