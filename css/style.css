@@ -120,7 +120,7 @@ button {
   top: 325px; }
 
 .hotels {
-  min-height: 1600px; }
+  min-height: 1000px; }
 
 .map {
   height: 1200px !important;
@@ -139,22 +139,21 @@ button {
 
 .hotels {
   color: white;
-  background: #031e31;
-  background-size: 100%; }
-  .hotels .panel--inner {
-    background: url("../images/robby.png") no-repeat 50% 900px;
-    background-size: 25%; }
+  background: #031e31 url("../images/robby.png") no-repeat 80% 30px;
+  background-size: 25%; }
 
 .checkout {
-  background: url("../images/chicago.png") no-repeat 0 300px;
+  background: url("../images/dublin-skyline.jpg") no-repeat 0 300px;
   background-size: 100% 75%;
   color: #303d45; }
   .checkout a {
+    text-decoration: underline !important;
     color: #303d45; }
   .checkout a:hover {
-    color: #303d45;
-    text-decoration: underline;
-    cursor: pointer; }
+    color: #800000; }
+
+.restaurants > div, .tourism > div {
+  width: 300px; }
 
 .itinerary--inner {
   max-height: 400px; }
@@ -664,5 +663,8 @@ a {
 
 .hidden {
   display: none; }
+
+.background--white {
+  background-color: rgba(255, 255, 255, 0.7); }
 
 /*# sourceMappingURL=style.css.map */

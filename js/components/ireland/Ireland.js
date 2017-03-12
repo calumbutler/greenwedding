@@ -25,13 +25,6 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 
 	var _TimelineLite2 = _interopRequireDefault(_TimelineLite);
 
-	console.log(new _ScrollMagic2['default']());
-	// var controller = new ScrollMagic.Controller({
-	// 			globalSceneOptions: {
-	// 				triggerHook: 'onLeave'
-	// 			}
-	// 		});
-
 	var Ireland = (function (_React$Component) {
 		_inherits(Ireland, _React$Component);
 
@@ -95,7 +88,7 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 						_React['default'].createElement(
 							'h3',
 							{ className: 'header--date' },
-							'December 21st 2017'
+							'December 21st, 2017'
 						),
 						_React['default'].createElement(
 							'h3',
@@ -130,13 +123,12 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 										null,
 										'3:30pm'
 									),
-									' ',
+									' - Marriage Ceremony at ',
 									_React['default'].createElement(
 										'a',
 										{ href: 'http://www.dublincity.ie/node/14412', target: '_blank' },
 										'Dublin City Hall'
-									),
-									' Kendall and Bart get married'
+									)
 								),
 								_React['default'].createElement(
 									'li',
@@ -146,13 +138,13 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 										null,
 										'4:00pm'
 									),
-									' Pictures of all wedding guest walking to ',
+									' - Cocktail Hour at ',
 									_React['default'].createElement(
 										'a',
 										{ href: 'http://www.louisfitzgerald.com/stagshead', target: '_blank' },
-										'Stag Head Pub'
+										'The Stag\'s Head'
 									),
-									' for drinks'
+									' pub'
 								),
 								_React['default'].createElement(
 									'li',
@@ -162,27 +154,11 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 										null,
 										'6:00pm'
 									),
-									' Cocktail hour begins at ',
+									' - Dinner and Dancing at ',
 									_React['default'].createElement(
 										'a',
 										{ href: 'http://www.fallonandbyrne.com/', target: '_blank' },
 										'Fallon & Byrne'
-									),
-									' dinner and dancing to follow'
-								),
-								_React['default'].createElement(
-									'li',
-									null,
-									_React['default'].createElement(
-										'b',
-										null,
-										'1:00am'
-									),
-									' After’s at The Candle Bar at ',
-									_React['default'].createElement(
-										'a',
-										{ href: 'http://www.kellysdublin.com/', target: '_blank' },
-										'Kelly’s Hotel'
 									)
 								)
 							)
@@ -197,7 +173,12 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 							_React['default'].createElement(
 								'h1',
 								{ className: 'text-center' },
-								'Hotels'
+								'Suggested Hotels'
+							),
+							_React['default'].createElement(
+								'p',
+								{ className: 'text-center' },
+								'All walking distance from ceremony & reception venues'
 							),
 							_React['default'].createElement(
 								'div',
@@ -217,76 +198,23 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 									_React['default'].createElement(
 										'p',
 										null,
-										'6-8 Wellington Quay,'
+										'6-8 Wellington Quay'
+									),
+									_React['default'].createElement(
+										'a',
+										{ href: 'http://theclarence.ie/', target: '_blank' },
+										_React['default'].createElement('img', { src: 'images/theclarence.jpeg', height: '300', width: '275' })
 									),
 									_React['default'].createElement(
 										'p',
 										null,
-										'Dublin 2'
-									),
-									_React['default'].createElement('img', { src: 'images/theclarence.jpeg', height: '300', width: '275' }),
-									_React['default'].createElement(
-										'p',
-										null,
-										'Lukasz room rate 150 Euro per night.  Limited space, please reserve asap.'
-									)
-								),
-								_React['default'].createElement(
-									'div',
-									{ className: 'hotel--container text-center' },
-									_React['default'].createElement(
-										'h2',
-										null,
+										'For block room rate email Lukasz at ',
 										_React['default'].createElement(
 											'a',
-											{ href: 'http://www.kellysdublin.com/', target: '_blank' },
-											' Kelly\'s Hotel Dublin'
-										)
-									),
-									_React['default'].createElement(
-										'p',
-										null,
-										'35-37 South Great George\'s Street,'
-									),
-									_React['default'].createElement(
-										'p',
-										null,
-										'Dublin 2'
-									),
-									_React['default'].createElement('img', { src: 'images/kellys.jpg', height: '300', width: '275' }),
-									_React['default'].createElement(
-										'p',
-										null,
-										'VERY limited space.'
-									)
-								),
-								_React['default'].createElement(
-									'div',
-									{ className: 'hotel--container text-center' },
-									_React['default'].createElement(
-										'h2',
-										null,
-										_React['default'].createElement(
-											'a',
-											{ href: 'http://graftonguesthouse.com/', target: '_blank' },
-											' Kelly’s Hotel Guest House'
-										)
-									),
-									_React['default'].createElement(
-										'p',
-										null,
-										'27 S Great George\'s St,'
-									),
-									_React['default'].createElement(
-										'p',
-										null,
-										'Dublin 2'
-									),
-									_React['default'].createElement('img', { src: 'images/grafton-guest.jpg', height: '300', width: '275' }),
-									_React['default'].createElement(
-										'p',
-										null,
-										'Across the road from Kelly\'s'
+											{ href: 'mailto:reservations@theclarence.ie?subject=Butler%20Lissner%20Wedding%20&body=Dear%20Luckasz%2C%0AI\'d%20like%20do%20reserve%20a%20room%20with%20the%20Lissner-Butler%20Room%20block%20for%20___%20days.%0A%20I%20can%20be%20reached%20at%2001-xxx-xxx-xxx' },
+											'reservations@theclarence.ie'
+										),
+										'. 10% charge to hold a room.'
 									)
 								),
 								_React['default'].createElement(
@@ -304,14 +232,18 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 									_React['default'].createElement(
 										'p',
 										null,
-										'Drury St'
+										'Drury Street'
+									),
+									_React['default'].createElement(
+										'a',
+										{ href: 'http://www.brookshotel.ie/ ', target: '_blank' },
+										_React['default'].createElement('img', { src: 'images/brooks.jpg', height: '300', width: '275' })
 									),
 									_React['default'].createElement(
 										'p',
 										null,
-										'Dublin 2'
-									),
-									_React['default'].createElement('img', { src: 'images/brooks.jpg', height: '300', width: '275' })
+										'Closest hotel to the reception venue.'
+									)
 								),
 								_React['default'].createElement(
 									'div',
@@ -328,23 +260,31 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 									_React['default'].createElement(
 										'p',
 										null,
-										'College Green,'
+										'Westmoreland Street, Temple Bar'
+									),
+									_React['default'].createElement(
+										'a',
+										{ href: 'http://www.brookshotel.ie/ ', target: '_blank' },
+										_React['default'].createElement('img', { src: 'images/themorgan.jpeg', height: '300', width: '275' })
 									),
 									_React['default'].createElement(
 										'p',
 										null,
-										'Westmoreland Street,'
-									),
+										'Special offers available on the hotel website'
+									)
+								)
+							),
+							_React['default'].createElement(
+								'div',
+								null,
+								_React['default'].createElement(
+									'h3',
+									{ className: 'text-center padding--large' },
+									'Need advice on accomodation in Ireland? Contact Kendall at ',
 									_React['default'].createElement(
-										'p',
-										null,
-										'Dublin, D02 HR67'
-									),
-									_React['default'].createElement('img', { src: 'images/themorgan.jpeg', height: '300', width: '275' }),
-									_React['default'].createElement(
-										'p',
-										null,
-										'Stay and Save promo” 2 nights save10%, 3 nights save 15%'
+										'a',
+										{ href: 'mailto:kendallsb3@gmail.com' },
+										'kendallsb3@gmail.com'
 									)
 								)
 							)
@@ -355,31 +295,60 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 						{ id: 'ireland4', className: 'parallaxParent panel checkout' },
 						_React['default'].createElement(
 							'div',
-							{ className: 'relative panel--inner padding' },
+							{ className: 'relative panel--inner padding background--white' },
 							_React['default'].createElement(
 								'h1',
 								{ className: 'text-center' },
-								'Things to check out'
+								'Tips for Touring Dublin'
+							),
+							_React['default'].createElement(
+								'h3',
+								{ className: 'text-center' },
+								'Restaurants & Bars'
 							),
 							_React['default'].createElement(
 								'div',
-								{ className: 'flex flex-wrap justify-around' },
+								{ className: 'restaurants flex flex-wrap justify-around text-center' },
 								_React['default'].createElement(
 									'div',
 									null,
 									_React['default'].createElement(
 										'a',
-										{ href: 'https://www.nytimes.com/2014/11/16/travel/things-to-do-in-36-hours-in-dublin-ireland.html' },
-										'New York Times: 36 Hours in Dublin'
-									)
-								),
-								_React['default'].createElement(
-									'div',
-									null,
-									_React['default'].createElement(
-										'a',
-										null,
+										{ href: 'https://www.avoca.com/explore/our-cafes/suffolkstreetcafe/', target: '_blank' },
 										'Avoca'
+									),
+									_React['default'].createElement(
+										'p',
+										null,
+										'Bright and open cafe space with an excellent and fresh all-day menu; Complete with a rooftop view across Dublin.'
+									)
+								),
+								_React['default'].createElement(
+									'div',
+									null,
+									_React['default'].createElement(
+										'a',
+										{ href: 'http://www.leoburdock.com', target: '_blank' },
+										'Leo Burdock'
+									),
+									_React['default'].createElement(
+										'p',
+										null,
+										'Best fish & chips in Dublin'
+									)
+								),
+								_React['default'].createElement(
+									'div',
+									null,
+									_React['default'].createElement(
+										'a',
+										{ href: 'http://sophies.ie/menus/', target: '_blank' },
+										'Sophie\'s Restaurant in the Dean Hotel'
+									),
+									_React['default'].createElement(
+										'p',
+										null,
+										'Great view of Dublin'
 									)
 								),
 								_React['default'].createElement(
@@ -388,7 +357,30 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 									_React['default'].createElement(
 										'a',
 										null,
-										'Guinness'
+										'Italian Quarter'
+									)
+								)
+							),
+							_React['default'].createElement(
+								'h3',
+								{ className: 'text-center' },
+								'Tourist Attractions'
+							),
+							_React['default'].createElement(
+								'div',
+								{ className: 'tourism flex flex-wrap justify-around text-center' },
+								_React['default'].createElement(
+									'div',
+									null,
+									_React['default'].createElement(
+										'a',
+										{ href: 'http://www.guiness-storehouse.com', target: '_blank' },
+										'Guinness Storehouse Tour'
+									),
+									_React['default'].createElement(
+										'p',
+										null,
+										'The Storehouse covers seven floors surrounding a glass atrium shaped in the form of a pint of Guinness.'
 									)
 								),
 								_React['default'].createElement(
@@ -396,8 +388,13 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 									null,
 									_React['default'].createElement(
 										'a',
+										{ href: 'http://www.tcd.ie/visitors/book-of-kells', target: '_blank' },
+										'Book of Kells Exhibition'
+									),
+									_React['default'].createElement(
+										'p',
 										null,
-										'Guinness'
+										'The Book of Kells is one of the finest and most famous of a group of manuscripts in what is known as the Insular style, produced from the late 6th through the early 9th centuries in monasteries in Ireland.'
 									)
 								),
 								_React['default'].createElement(
@@ -405,8 +402,8 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 									null,
 									_React['default'].createElement(
 										'a',
-										null,
-										'Book of Kells'
+										{ href: 'https://en.wikipedia.org/wiki/St_Stephen\'s_Green', target: '_blank' },
+										'St Stephens Green'
 									)
 								),
 								_React['default'].createElement(
@@ -414,16 +411,30 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 									null,
 									_React['default'].createElement(
 										'a',
+										{ href: 'http://www.gpowitnesshistory.ie/visit/', target: '_blank' },
+										'General Post Office (GPO)'
+									),
+									_React['default'].createElement(
+										'p',
 										null,
-										'St. Stephens Green'
+										'During the Easter Rising of 1916, the GPO served as the headquarters of the uprising\'s leaders.'
 									)
-								),
+								)
+							),
+							_React['default'].createElement(
+								'h3',
+								{ className: 'text-center' },
+								'For More Ideas Checkout:'
+							),
+							_React['default'].createElement(
+								'div',
+								{ className: 'flex flex-wrap justify-around flex-column text-center' },
 								_React['default'].createElement(
 									'div',
 									null,
 									_React['default'].createElement(
 										'a',
-										null,
+										{ href: 'http://www.Lovindublin.com', target: '_blank' },
 										'Lovindublin.com'
 									)
 								),
@@ -432,7 +443,7 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 									null,
 									_React['default'].createElement(
 										'a',
-										null,
+										{ href: 'http://www.Totallydublin.ie', target: '_blank' },
 										'Totallydublin.ie'
 									)
 								),
@@ -441,8 +452,8 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 									null,
 									_React['default'].createElement(
 										'a',
-										null,
-										'Dean Hotel bar Sophie’S 360 views of Dublin (skip the guiness tour and get your city views here)'
+										{ href: 'https://www.nytimes.com/2014/11/16/travel/things-to-do-in-36-hours-in-dublin-ireland.html' },
+										'New York Times: 36 Hours in Dublin'
 									)
 								)
 							)

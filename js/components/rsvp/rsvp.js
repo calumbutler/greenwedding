@@ -22,6 +22,7 @@ define(['exports', 'module', 'react', 'react-router'], function (exports, module
 						_get(Object.getPrototypeOf(RSVP.prototype), 'constructor', this).call(this, props);
 						//this.state = irelandStore.getState();
 						//irelandStore.listen(this.storeUpdate.bind(this));
+						document.getElementById('content').style.overflowX = 'hidden';
 				}
 
 				_createClass(RSVP, [{
@@ -40,7 +41,7 @@ define(['exports', 'module', 'react', 'react-router'], function (exports, module
 						value: function render() {
 								return _React['default'].createElement(
 										'iframe',
-										{ src: 'https://docs.google.com/forms/d/e/1FAIpQLSe48dejgJ8Q7kvHSj_HbHysBsNZisqH4UYQpCxzwJGp-zMV8A/viewform?embedded=true', height: '1200', width: '100%', frameborder: '0', marginheight: '0', marginwidth: '0' },
+										{ src: 'https://docs.google.com/forms/d/e/1FAIpQLSe48dejgJ8Q7kvHSj_HbHysBsNZisqH4UYQpCxzwJGp-zMV8A/viewform?embedded=true', height: '1450', width: '100%', frameborder: '0', marginheight: '0', marginwidth: '0' },
 										'Loading...'
 								);
 						}
