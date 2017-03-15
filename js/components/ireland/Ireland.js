@@ -482,7 +482,17 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 								'h1',
 								{ className: 'text-center' },
 								'Playlist'
-							)
+							),
+							_React['default'].createElement(
+								'h3',
+								{ className: 'text-center flex space-between' },
+								_React['default'].createElement(
+									'a',
+									{ className: 'navy', href: 'spotify:user:1231478545:playlist:1eOwpEJoorUYMUR62zDjh0' },
+									'Open Spotify to add your music'
+								)
+							),
+							_React['default'].createElement('iframe', { src: 'https://embed.spotify.com/?uri=spotify%3Auser%3A1231478545%3Aplaylist%3A1eOwpEJoorUYMUR62zDjh0', width: '100%', height: '450', frameborder: '0', allowtransparency: 'true' })
 						)
 					)
 				);

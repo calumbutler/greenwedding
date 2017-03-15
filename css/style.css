@@ -587,6 +587,17 @@ th {
 .app-container, .app, #container {
   height: 100%; }
 
+.navy {
+  color: #031e31;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  cursor: pointer; }
+
+.navy:hover {
+  color: #800000;
+  text-decoration: underline; }
+
 .overflow-hidden {
   overflow: hidden; }
 
@@ -665,6 +676,6 @@ a {
   display: none; }
 
 .background--white {
-  background-color: rgba(255, 255, 255, 0.7); }
+  background-color: rgba(255, 255, 255, 0.8); }
 
 /*# sourceMappingURL=style.css.map */
