@@ -1,4 +1,4 @@
-define(['exports', 'module', 'react', 'components/navigation/navigation', 'components/ireland/actions', 'components/ireland/store', 'ScrollMagic', 'TweenMax', 'TweenLite', 'TimelineMax', 'TimelineLite', 'scrollmagic-setTween', 'scrollmagic-addIndicators', 'components/ireland/map', 'components/ireland/playlist', 'react-router'], function (exports, module, _react, _componentsNavigationNavigation, _componentsIrelandActions, _componentsIrelandStore, _ScrollMagic, _TweenMax, _TweenLite, _TimelineMax, _TimelineLite, _scrollmagicSetTween, _scrollmagicAddIndicators, _componentsIrelandMap, _componentsIrelandPlaylist, _reactRouter) {
+define(['exports', 'module', 'react', 'components/navigation/navigation', 'components/ireland/actions', 'components/ireland/store', 'ScrollMagic', 'TweenMax', 'TweenLite', 'TimelineMax', 'TimelineLite', 'scrollmagic-setTween', 'scrollmagic-addIndicators', 'components/ireland/map', 'react-router'], function (exports, module, _react, _componentsNavigationNavigation, _componentsIrelandActions, _componentsIrelandStore, _ScrollMagic, _TweenMax, _TweenLite, _TimelineMax, _TimelineLite, _scrollmagicSetTween, _scrollmagicAddIndicators, _componentsIrelandMap, _reactRouter) {
 	'use strict';
 
 	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
@@ -65,7 +65,7 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 				new _ScrollMagic2['default'].Scene({ triggerElement: "#ireland6" }).setTween("#ireland6 > div", { y: "20%", ease: 'Linear' }).addTo(controller);
 
 				(0, _componentsIrelandMap.createMap)();
-				(0, _componentsIrelandPlaylist.initPlaylist)();
+				initPlaylist();
 			}
 		}, {
 			key: 'componentDidUpdate',
@@ -481,7 +481,7 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 							_React['default'].createElement(
 								'h1',
 								{ className: 'text-center' },
-								'Playlist'
+								'Please Add to Our Playlist'
 							),
 							_React['default'].createElement(
 								'h3',
@@ -504,4 +504,6 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 
 	module.exports = Ireland;
 });
+
+//import {initPlaylist} from 'components/ireland/playlist';
 //# sourceMappingURL=Ireland.js.map

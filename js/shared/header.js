@@ -26,7 +26,15 @@ define(['exports', 'module', 'react', 'react-router'], function (exports, module
 
 		_createClass(Header, [{
 			key: 'componentDidMount',
-			value: function componentDidMount() {}
+			value: function componentDidMount() {
+				console.log(this.props);
+				var props = this.props;
+				setTimeout(function () {
+					//browserHistory.push('#/wedding/');
+					console.log(props);
+					props.router.push('wedding/');
+				}, 8000);
+			}
 		}, {
 			key: 'render',
 			value: function render() {

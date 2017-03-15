@@ -55,7 +55,7 @@ define(['exports', 'module', 'react', 'react-router'], function (exports, module
 												null,
 												_React['default'].createElement(
 														_reactRouter.Link,
-														{ activeStyle: { textDecoration: 'underline' }, to: '/registry/' },
+														{ activeStyle: { textDecoration: 'underline' }, to: '/registry/', target: '_blank' },
 														'Registry'
 												)
 										),
@@ -64,7 +64,7 @@ define(['exports', 'module', 'react', 'react-router'], function (exports, module
 												null,
 												_React['default'].createElement(
 														_reactRouter.Link,
-														{ activeStyle: { textDecoration: 'underline' }, to: '/rsvp/' },
+														{ activeStyle: { textDecoration: 'underline' }, to: '/rsvp/', target: '_blank' },
 														'RSVP'
 												)
 										),

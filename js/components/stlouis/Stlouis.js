@@ -1,4 +1,4 @@
-define(['exports', 'module', 'react', 'components/stlouis/actions', 'components/stlouis/store'], function (exports, module, _react, _componentsStlouisActions, _componentsStlouisStore) {
+define(['exports', 'module', 'react', 'components/stlouis/actions', 'components/stlouis/store', 'components/navigation/navigation'], function (exports, module, _react, _componentsStlouisActions, _componentsStlouisStore, _componentsNavigationNavigation) {
 	'use strict';
 
 	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
@@ -12,6 +12,8 @@ define(['exports', 'module', 'react', 'components/stlouis/actions', 'components/
 	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var _React = _interopRequireDefault(_react);
+
+	var _Navigation = _interopRequireDefault(_componentsNavigationNavigation);
 
 	var Stlouis = (function (_React$Component) {
 		_inherits(Stlouis, _React$Component);
@@ -38,7 +40,16 @@ define(['exports', 'module', 'react', 'components/stlouis/actions', 'components/
 		}, {
 			key: 'render',
 			value: function render() {
-				return _React['default'].createElement('div', { className: 'stlouis--container' });
+				return _React['default'].createElement(
+					'div',
+					{ className: 'stlouis--container' },
+					_React['default'].createElement(_Navigation['default'], null),
+					_React['default'].createElement(
+						'h1',
+						{ className: 'tbd--title' },
+						'Details to be decided'
+					)
+				);
 			}
 		}]);
 
