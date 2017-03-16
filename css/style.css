@@ -15,7 +15,7 @@ button {
 
 .header--hashtag {
   position: absolute;
-  top: 15pxpx;
+  bottom: 15px;
   width: 100%;
   text-align: center;
   cursor: pointer; }
@@ -33,15 +33,17 @@ button {
   top: 225px; }
 
 .header--navigation {
-  position: absolute;
-  bottom: 20px;
+  position: fixed;
+  top: 0px;
   width: 100%;
   text-align: center;
   list-style: none;
   font-size: 24px;
-  line-height: 30px;
-  padding: 0;
-  color: white; }
+  line-height: 25px;
+  padding: 15px 0px;
+  margin: 0;
+  color: white;
+  z-index: 1000; }
   .header--navigation li {
     height: 30px;
     padding: 5px 10px;
@@ -143,14 +145,58 @@ button {
   background-size: 25%; }
 
 .checkout {
+  min-height: 220vh;
   background: url("../images/dublin-skyline.jpg") no-repeat 0 300px;
-  background-size: 100% 75%;
+  background-size: 100% 90%;
   color: #303d45; }
+  .checkout h3 {
+    font-size: 26px; }
+  .checkout div {
+    margin: 15px;
+    transition: all 0.5s; }
+  .checkout .title {
+    background: #303d45;
+    padding: 10px;
+    border-radius: 10px; }
+  .checkout .title:hover {
+    background: url("../images/texturedoverlay.png"); }
+    .checkout .title:hover a {
+      color: #303d45 !important; }
   .checkout a {
-    text-decoration: underline !important;
-    color: #303d45; }
+    font-size: 20px;
+    color: white; }
   .checkout a:hover {
-    color: #800000; }
+    text-decoration: underline !important; }
+  .checkout .extra a {
+    color: #303d45; }
+  .checkout .description {
+    height: 0;
+    postion: absolute;
+    top: 20px;
+    z-index: 40000;
+    background-color: white;
+    -webkit-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: top;
+    -o-transform-origin: top;
+    -ms-transform-origin: top;
+    transform-origin: top;
+    -webkit-transition: -webkit-transform 0.50s ease-out;
+    -o-transition: -o-transform 0.50s ease;
+    -ms-transition: -ms-transform 0.50s ease;
+    transition: transform 0.50s ease; }
+  .checkout .description.open {
+    -webkit-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    transform: scaleY(1); }
+    .checkout .description.open p {
+      background-color: white;
+      border-radius: 10px;
+      border: 1px solid #303d45;
+      padding: 5px; }
 
 .restaurants > div, .tourism > div {
   width: 300px; }
@@ -702,6 +748,6 @@ a {
   display: none; }
 
 .background--white {
-  background-color: rgba(255, 255, 255, 0.8); }
+  background-color: rgba(255, 255, 255, 0.9); }
 
 /*# sourceMappingURL=style.css.map */

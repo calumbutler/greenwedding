@@ -1,5 +1,5 @@
 define(["exports"], function (exports) {
-  //import mapboxgl from 'mapbox-gl';
+  //import {mapbox} from 'mapbox/src/mapbox';
   //console.log(mapboxgl)
   //console.log(Map)
   "use strict";
@@ -9,7 +9,7 @@ define(["exports"], function (exports) {
   });
   var createMap = function createMap() {
     // mapboxgl.accessToken = 'pk.eyJ1IjoidGdpcmdpbiIsImEiOiJlQjdvS05jIn0.h9yB6fjZqcL11l8UH9RLmg';
-    // var map = new mapboxgl.Map({
+    // var map = new mapbox.Map({
     //     container: 'map',
     //     style: 'mapbox://styles/tgirgin/ciy2ellxj007v2rmhq2aoo4xt',
     //     zoom: 14.32,

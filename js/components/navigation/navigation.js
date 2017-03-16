@@ -40,7 +40,7 @@ define(['exports', 'module', 'react', 'react-router'], function (exports, module
 						value: function render() {
 								return _React['default'].createElement(
 										'ul',
-										{ className: 'header--navigation flex flex-row justify-center' },
+										{ id: 'navigation', className: 'header--navigation flex flex-row justify-center' },
 										_React['default'].createElement(
 												'li',
 												null,

@@ -52,24 +52,41 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 				var controller = new _ScrollMagic2['default'].Controller({ globalSceneOptions: { triggerHook: "onEnter", duration: "200%" } });
 
 				// build scenes
-				new _ScrollMagic2['default'].Scene({ triggerElement: "#ireland1" }).setTween("#ireland1 > div", { y: "20%", ease: 'Linear' }).addTo(controller);
+				var tween1 = _TweenMax2['default'].to("#navigation", 1, { backgroundColor: "transparent", scale: 1.0 });
+				new _ScrollMagic2['default'].Scene({ triggerElement: "#ireland1", duration: 500 }).setTween(tween1).setPin("#navigation").addTo(controller);
+				var tween2 = _TweenMax2['default'].to("#navigation", 1, { backgroundColor: "#303d45", scale: 1.2 });
+				//var tween3 = TweenMax.from("#navigation", 1, {backgroundColor: "transparent", scale: 1.2});
+				new _ScrollMagic2['default'].Scene({ triggerElement: "#ireland1" }).setTween(tween2).setPin("#navigation").addTo(controller);
+
+				new _ScrollMagic2['default'].Scene({ triggerElement: "#ireland1" }).setTween("#ireland1 > div", { y: "20%", ease: 'Linear' }).setPin("#navigation").addTo(controller);
 
 				new _ScrollMagic2['default'].Scene({ triggerElement: "#ireland2" }).setTween("#ireland2 > div", { y: "20%", ease: 'Linear' }).addTo(controller);
 
 				new _ScrollMagic2['default'].Scene({ triggerElement: "#ireland3" }).setTween("#ireland3 > div", { y: "20%", ease: 'Linear' }).addTo(controller);
 
-				new _ScrollMagic2['default'].Scene({ triggerElement: "#ireland4" }).setTween("#ireland4 > div", { y: "20%", ease: 'Linear' }).addTo(controller);
+				new _ScrollMagic2['default'].Scene({ triggerElement: "#ireland4" }).setTween("#ireland4 > div", { y: "10%", ease: 'Linear' }).addTo(controller);
 
 				new _ScrollMagic2['default'].Scene({ triggerElement: "#ireland5" }).setTween("#ireland5 > div", { y: "20%", ease: 'Linear' }).addTo(controller);
 
 				new _ScrollMagic2['default'].Scene({ triggerElement: "#ireland6" }).setTween("#ireland6 > div", { y: "20%", ease: 'Linear' }).addTo(controller);
 
 				(0, _componentsIrelandMap.createMap)();
-				initPlaylist();
 			}
 		}, {
 			key: 'componentDidUpdate',
 			value: function componentDidUpdate() {}
+		}, {
+			key: 'mouseover',
+			value: function mouseover(i) {
+
+				document.getElementById('checkout-dex-' + i).classList.add('open');
+			}
+		}, {
+			key: 'mouseout',
+			value: function mouseout(i) {
+
+				document.getElementById('checkout-dex-' + i).classList.remove('open');
+			}
 		}, {
 			key: 'render',
 			value: function render() {
@@ -311,53 +328,134 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 								{ className: 'restaurants flex flex-wrap justify-around text-center' },
 								_React['default'].createElement(
 									'div',
-									null,
+									{ className: 'checkout--flex-item' },
 									_React['default'].createElement(
-										'a',
-										{ href: 'https://www.avoca.com/explore/our-cafes/suffolkstreetcafe/', target: '_blank' },
-										'Avoca'
+										'div',
+										{ id: 'checkout-title-1', 'data-value': '1', className: 'title', onMouseOver: this.mouseover.bind(null, 1), onMouseOut: this.mouseout.bind(null, 1) },
+										_React['default'].createElement(
+											'a',
+											{ href: 'https://www.avoca.com/explore/our-cafes/suffolkstreetcafe/', target: '_blank' },
+											'Avoca'
+										)
 									),
 									_React['default'].createElement(
-										'p',
-										null,
-										'Bright and open cafe space with an excellent and fresh all-day menu; Complete with a rooftop view across Dublin.'
+										'div',
+										{ id: 'checkout-dex-1', className: 'description' },
+										_React['default'].createElement(
+											'p',
+											null,
+											'Bright and open cafe space with an excellent and fresh all-day menu; Complete with a rooftop view across Dublin.'
+										)
 									)
 								),
 								_React['default'].createElement(
 									'div',
-									null,
+									{ className: 'checkout--flex-item' },
 									_React['default'].createElement(
-										'a',
-										{ href: 'http://www.leoburdock.com', target: '_blank' },
-										'Leo Burdock'
+										'div',
+										{ id: 'checkout-title-2', 'data-value': '2', className: 'title', onMouseOver: this.mouseover.bind(null, 2), onMouseOut: this.mouseout.bind(null, 2) },
+										_React['default'].createElement(
+											'a',
+											{ href: 'http://www.leoburdock.com', target: '_blank' },
+											'Leo Burdock'
+										)
 									),
 									_React['default'].createElement(
-										'p',
-										null,
-										'Best fish & chips in Dublin'
+										'div',
+										{ id: 'checkout-dex-2', className: 'description' },
+										_React['default'].createElement(
+											'p',
+											null,
+											'Best fish & chips in Dublin'
+										)
 									)
 								),
 								_React['default'].createElement(
 									'div',
-									null,
+									{ className: 'checkout--flex-item' },
 									_React['default'].createElement(
-										'a',
-										{ href: 'http://sophies.ie/menus/', target: '_blank' },
-										'Sophie\'s Restaurant in the Dean Hotel'
+										'div',
+										{ id: 'checkout-title-3', 'data-value': '3', className: 'title', onMouseOver: this.mouseover.bind(null, 3), onMouseOut: this.mouseout.bind(null, 3) },
+										_React['default'].createElement(
+											'a',
+											{ href: 'http://winding-stair.com/food/', target: '_blank' },
+											'The Winding Stair'
+										)
 									),
 									_React['default'].createElement(
-										'p',
-										null,
-										'Great view of Dublin'
+										'div',
+										{ id: 'checkout-dex-3', className: 'description' },
+										_React['default'].createElement(
+											'p',
+											null,
+											'THE Winding Stair Bookshop & Café became a famous Dublin landmark in the 1970s and 1980s. Named after the Yeats poem, and in honour of its winding staircase, it is perfectly located, overlooking the river Liffey, with an iconic view of the Ha’penny bridge. As a popular meeting place for writers, musicians and artists, it was a well known hub for debate and creativity with many poems written, novels penned and movies shot within its walls.'
+										)
 									)
 								),
 								_React['default'].createElement(
 									'div',
-									null,
+									{ className: 'checkout--flex-item' },
 									_React['default'].createElement(
-										'a',
-										null,
-										'Italian Quarter'
+										'div',
+										{ id: 'checkout-title-4', 'data-value': '4', className: 'title', onMouseOver: this.mouseover.bind(null, 4), onMouseOut: this.mouseout.bind(null, 4) },
+										_React['default'].createElement(
+											'a',
+											{ href: 'http://thewoollenmills.com/menus.htm', target: '_blank' },
+											'The Woollen Mills'
+										)
+									),
+									_React['default'].createElement(
+										'div',
+										{ id: 'checkout-dex-4', className: 'description' },
+										_React['default'].createElement(
+											'p',
+											null,
+											'The Woollen Mills has been one of the most iconic buildings and businesses in Dublin for over one hundred years, and to have taken over this site is a serious privilege. Much like our award-winning sister restaurant, The Winding Stair, we feel like we are custodians of something very special... a piece of history (James Joyce worked here for goodness sake...how unbelievable is that?!) and we must do it proud.'
+										)
+									)
+								),
+								_React['default'].createElement(
+									'div',
+									{ className: 'checkout--flex-item' },
+									_React['default'].createElement(
+										'div',
+										{ id: 'checkout-title-5', 'data-value': '5', className: 'title', onMouseOver: this.mouseover.bind(null, 5), onMouseOut: this.mouseout.bind(null, 5) },
+										_React['default'].createElement(
+											'a',
+											{ href: 'http://sophies.ie/menus/', target: '_blank' },
+											'Sophie\'s Restaurant in the Dean Hotel'
+										)
+									),
+									_React['default'].createElement(
+										'div',
+										{ id: 'checkout-dex-5', className: 'description' },
+										_React['default'].createElement(
+											'p',
+											null,
+											'Great view of Dublin'
+										)
+									)
+								),
+								_React['default'].createElement(
+									'div',
+									{ className: 'checkout--flex-item' },
+									_React['default'].createElement(
+										'div',
+										{ id: 'checkout-title-6', 'data-value': '6', className: 'title', onMouseOver: this.mouseover.bind(null, 6), onMouseOut: this.mouseout.bind(null, 6) },
+										_React['default'].createElement(
+											'a',
+											null,
+											'Italian Quarter'
+										)
+									),
+									_React['default'].createElement(
+										'div',
+										{ id: 'checkout-dex-6', className: 'description' },
+										_React['default'].createElement(
+											'p',
+											null,
+											'Great view of Dublin'
+										)
 									)
 								)
 							),
@@ -373,51 +471,132 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 									'div',
 									null,
 									_React['default'].createElement(
-										'a',
-										{ href: 'http://www.guiness-storehouse.com', target: '_blank' },
-										'Guinness Storehouse Tour'
+										'div',
+										{ id: 'checkout-title-7', 'data-value': '7', className: 'title', onMouseOver: this.mouseover.bind(null, 7), onMouseOut: this.mouseout.bind(null, 7) },
+										_React['default'].createElement(
+											'a',
+											{ href: 'http://www.guiness-storehouse.com', target: '_blank' },
+											'Guinness Storehouse Tour'
+										)
 									),
 									_React['default'].createElement(
-										'p',
-										null,
-										'The Storehouse covers seven floors surrounding a glass atrium shaped in the form of a pint of Guinness.'
+										'div',
+										{ id: 'checkout-dex-7', className: 'description' },
+										_React['default'].createElement(
+											'p',
+											null,
+											'The Storehouse covers seven floors surrounding a glass atrium shaped in the form of a pint of Guinness.'
+										)
+									)
+								),
+								_React['default'].createElement(
+									'div',
+									{ className: 'checkout--flex-item' },
+									_React['default'].createElement(
+										'div',
+										{ id: 'checkout-title-8', 'data-value': '8', className: 'title', onMouseOver: this.mouseover.bind(null, 8), onMouseOut: this.mouseout.bind(null, 8) },
+										_React['default'].createElement(
+											'a',
+											{ href: 'http://www.imma.ie/en/index.htm', target: '_blank' },
+											'Irish Museum of Modern Art (IMMA)'
+										)
+									),
+									_React['default'].createElement(
+										'div',
+										{ id: 'checkout-dex-8', className: 'description' },
+										_React['default'].createElement(
+											'p',
+											null,
+											'IMMA is the home of the national collection of modern and contemporary art and takes responsibility for the care and maintenance of this national resource. We ensure that it is accessible to visitors to IMMA and beyond through exhibitions, collaborations, loans, touring partnerships and digital programmes.'
+										)
+									)
+								),
+								_React['default'].createElement(
+									'div',
+									{ className: 'checkout--flex-item' },
+									_React['default'].createElement(
+										'div',
+										{ id: 'checkout-title-9', 'data-value': '9', className: 'title', onMouseOver: this.mouseover.bind(null, 9), onMouseOut: this.mouseout.bind(null, 9) },
+										_React['default'].createElement(
+											'a',
+											{ href: 'http://kilmainhamgaolmuseum.ie/', target: '_blank' },
+											'Kilmainham Gaol Museum'
+										)
+									),
+									_React['default'].createElement(
+										'div',
+										{ id: 'checkout-dex-9', className: 'description' },
+										_React['default'].createElement(
+											'p',
+											null,
+											'Kilmainham Gaol is a former prison in Kilmainham, Dublin, Ireland. It is now a museum run by the Office of Public Works, an agency of the Government of Ireland. Many Irish revolutionaries, including the leaders of the 1916 Easter Rising, were imprisoned and executed in the prison by the British. Kilmainham Gaol is a very busy site and the prebooking of tickets is essential to gain access at your chosen day and time.'
+										)
+									)
+								),
+								_React['default'].createElement(
+									'div',
+									{ className: 'checkout--flex-item' },
+									_React['default'].createElement(
+										'div',
+										{ id: 'checkout-title-10', 'data-value': '10', className: 'title', onMouseOver: this.mouseover.bind(null, 10), onMouseOut: this.mouseout.bind(null, 10) },
+										_React['default'].createElement(
+											'a',
+											{ href: 'http://www.tcd.ie/visitors/book-of-kells', target: '_blank' },
+											'Book of Kells Exhibition'
+										)
+									),
+									_React['default'].createElement(
+										'div',
+										{ id: 'checkout-dex-10', className: 'description' },
+										_React['default'].createElement(
+											'p',
+											null,
+											'The Book of Kells is one of the finest and most famous of a group of manuscripts in what is known as the Insular style, produced from the late 6th through the early 9th centuries in monasteries in Ireland.'
+										)
 									)
 								),
 								_React['default'].createElement(
 									'div',
 									null,
 									_React['default'].createElement(
-										'a',
-										{ href: 'http://www.tcd.ie/visitors/book-of-kells', target: '_blank' },
-										'Book of Kells Exhibition'
+										'div',
+										{ id: 'checkout-title-11', 'data-value': '11', className: 'title', onMouseOver: this.mouseover.bind(null, 11), onMouseOut: this.mouseout.bind(null, 11) },
+										_React['default'].createElement(
+											'a',
+											{ href: 'https://en.wikipedia.org/wiki/St_Stephen\'s_Green', target: '_blank' },
+											'St Stephens Green'
+										)
 									),
 									_React['default'].createElement(
-										'p',
-										null,
-										'The Book of Kells is one of the finest and most famous of a group of manuscripts in what is known as the Insular style, produced from the late 6th through the early 9th centuries in monasteries in Ireland.'
+										'div',
+										{ id: 'checkout-dex-11', className: 'description' },
+										_React['default'].createElement(
+											'p',
+											null,
+											'stuff here'
+										)
 									)
 								),
 								_React['default'].createElement(
 									'div',
-									null,
+									{ className: 'checkout--flex-item' },
 									_React['default'].createElement(
-										'a',
-										{ href: 'https://en.wikipedia.org/wiki/St_Stephen\'s_Green', target: '_blank' },
-										'St Stephens Green'
-									)
-								),
-								_React['default'].createElement(
-									'div',
-									null,
-									_React['default'].createElement(
-										'a',
-										{ href: 'http://www.gpowitnesshistory.ie/visit/', target: '_blank' },
-										'General Post Office (GPO)'
+										'div',
+										{ id: 'checkout-title-12', 'data-value': '12', className: 'title', onMouseOver: this.mouseover.bind(null, 12), onMouseOut: this.mouseout.bind(null, 12) },
+										_React['default'].createElement(
+											'a',
+											{ href: 'http://www.gpowitnesshistory.ie/visit/', target: '_blank' },
+											'General Post Office (GPO)'
+										)
 									),
 									_React['default'].createElement(
-										'p',
-										null,
-										'During the Easter Rising of 1916, the GPO served as the headquarters of the uprising\'s leaders.'
+										'div',
+										{ id: 'checkout-dex-12', className: 'description' },
+										_React['default'].createElement(
+											'p',
+											null,
+											'During the Easter Rising of 1916, the GPO served as the headquarters of the uprising\'s leaders.'
+										)
 									)
 								)
 							),
@@ -428,7 +607,7 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 							),
 							_React['default'].createElement(
 								'div',
-								{ className: 'flex flex-wrap justify-around flex-column text-center' },
+								{ className: 'flex flex-wrap justify-around flex-row text-center extra' },
 								_React['default'].createElement(
 									'div',
 									null,
@@ -456,6 +635,47 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 										'New York Times: 36 Hours in Dublin'
 									)
 								)
+							),
+							_React['default'].createElement(
+								'h3',
+								{ className: 'text-center' },
+								'Day Trips from Dublin'
+							),
+							_React['default'].createElement(
+								'div',
+								{ className: 'flex flex-wrap justify-around flex-column text-center extra' },
+								_React['default'].createElement(
+									'div',
+									null,
+									_React['default'].createElement(
+										'p',
+										null,
+										'Kilkenny and Galway are cities that are easy day trips from Dublin. Tickets for the train can be purchased day of at Heuston Station or online at ',
+										_React['default'].createElement(
+											'a',
+											{ href: 'http://irishrail.ie', target: '_blank' },
+											'irishrail.ie'
+										)
+									)
+								),
+								_React['default'].createElement(
+									'div',
+									null,
+									_React['default'].createElement(
+										'a',
+										{ href: 'http://visitkilkenny.ie/', target: '_blank' },
+										'http://visitkilkenny.ie/'
+									)
+								),
+								_React['default'].createElement(
+									'div',
+									null,
+									_React['default'].createElement(
+										'a',
+										{ href: 'http://www.galwaytourism.ie/', target: '_blank' },
+										'http://www.galwaytourism.ie/'
+									)
+								)
 							)
 						)
 					),
@@ -469,7 +689,8 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 								'h1',
 								{ className: 'text-center' },
 								'Map'
-							)
+							),
+							_React['default'].createElement('div', { id: 'map' })
 						)
 					),
 					_React['default'].createElement(
