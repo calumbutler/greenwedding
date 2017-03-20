@@ -1,4 +1,4 @@
-define(['exports', 'module', 'react', 'components/navigation/navigation', 'components/ireland/actions', 'components/ireland/store', 'ScrollMagic', 'TweenMax', 'TweenLite', 'TimelineMax', 'TimelineLite', 'scrollmagic-setTween', 'scrollmagic-addIndicators', 'components/ireland/map', 'react-router'], function (exports, module, _react, _componentsNavigationNavigation, _componentsIrelandActions, _componentsIrelandStore, _ScrollMagic, _TweenMax, _TweenLite, _TimelineMax, _TimelineLite, _scrollmagicSetTween, _scrollmagicAddIndicators, _componentsIrelandMap, _reactRouter) {
+define(['exports', 'module', 'react', 'components/navigation/navigation', 'components/ireland/actions', 'components/ireland/store', 'ScrollMagic', 'TweenMax', 'TweenLite', 'TimelineMax', 'TimelineLite', 'scrollmagic-setTween', 'scrollmagic-addIndicators', 'react-router'], function (exports, module, _react, _componentsNavigationNavigation, _componentsIrelandActions, _componentsIrelandStore, _ScrollMagic, _TweenMax, _TweenLite, _TimelineMax, _TimelineLite, _scrollmagicSetTween, _scrollmagicAddIndicators, _reactRouter) {
 	'use strict';
 
 	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
@@ -69,8 +69,6 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 				new _ScrollMagic2['default'].Scene({ triggerElement: "#ireland5" }).setTween("#ireland5 > div", { y: "20%", ease: 'Linear' }).addTo(controller);
 
 				new _ScrollMagic2['default'].Scene({ triggerElement: "#ireland6" }).setTween("#ireland6 > div", { y: "20%", ease: 'Linear' }).addTo(controller);
-
-				(0, _componentsIrelandMap.createMap)();
 			}
 		}, {
 			key: 'componentDidUpdate',
@@ -432,7 +430,7 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 										_React['default'].createElement(
 											'p',
 											null,
-											'Great view of Dublin'
+											'Sophie’s is a beautiful and modern glasshouse restaurant, boasting stunning 360 degree views of Dublin, from cityscape to countryside, it has an outlook like no other.'
 										)
 									)
 								),
@@ -573,7 +571,7 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 										_React['default'].createElement(
 											'p',
 											null,
-											'stuff here'
+											'St Stephen’s Green Park is a historical park and garden, located in the centre of Dublin city.'
 										)
 									)
 								),
@@ -688,9 +686,9 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 							_React['default'].createElement(
 								'h1',
 								{ className: 'text-center' },
-								'Map'
+								'Map of the Area'
 							),
-							_React['default'].createElement('div', { id: 'map' })
+							_React['default'].createElement('iframe', { src: 'https://www.google.com/maps/d/embed?mid=1CMVtOy92A29bfqrPF1YzmhYQvsQ', width: '100%', height: '500' })
 						)
 					),
 					_React['default'].createElement(
@@ -726,5 +724,6 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 	module.exports = Ireland;
 });
 
+//import CustomMap from 'components/ireland/map';
 //import {initPlaylist} from 'components/ireland/playlist';
 //# sourceMappingURL=Ireland.js.map
