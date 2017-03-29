@@ -188,7 +188,7 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 							_React['default'].createElement(
 								'h1',
 								{ className: 'text-center' },
-								'Suggested Hotels'
+								'Hotels & Travel'
 							),
 							_React['default'].createElement(
 								'p',
@@ -302,6 +302,49 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 										'kendallsb3@gmail.com'
 									)
 								)
+							),
+							_React['default'].createElement('br', null),
+							_React['default'].createElement(
+								'div',
+								{ className: 'text-center' },
+								_React['default'].createElement(
+									'h2',
+									null,
+									'Travel'
+								),
+								_React['default'].createElement(
+									'p',
+									null,
+									'You can fly direct to Dublin from DC, Chicago, New York and Boston with Aer Lingus or United. Connecting flights are offered through WOW, British Airways, American and Lufthansa.'
+								),
+								_React['default'].createElement(
+									'p',
+									null,
+									'Checkout ',
+									_React['default'].createElement(
+										'a',
+										{ href: 'https://www.skyscanner.com/', target: '_blank' },
+										'SkyScanner'
+									),
+									' and ',
+									_React['default'].createElement(
+										'a',
+										{ href: 'https://www.google.com/flights/', target: '_blank' },
+										'Google Flights'
+									),
+									' for cheap flights.'
+								),
+								_React['default'].createElement(
+									'p',
+									null,
+									'A taxi from Dublin Airport to Dublin city center costs about 30 Euro. There are also a number of ',
+									_React['default'].createElement(
+										'a',
+										{ href: 'https://www.dublinairport.com/to-from-the-airport/by-bus', target: '_blank' },
+										'buses'
+									),
+									' available from the airport.'
+								)
 							)
 						)
 					),
@@ -324,6 +367,94 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 							_React['default'].createElement(
 								'div',
 								{ className: 'restaurants flex flex-wrap justify-around text-center' },
+								_React['default'].createElement(
+									'div',
+									{ className: 'checkout--flex-item' },
+									_React['default'].createElement(
+										'div',
+										{ id: 'checkout-title-13', 'data-value': '13', className: 'title', onMouseOver: this.mouseover.bind(null, 13), onMouseOut: this.mouseout.bind(null, 13) },
+										_React['default'].createElement(
+											'a',
+											{ href: 'https://www.odonoghues.ie', target: '_blank' },
+											'O’Donoghue’s'
+										)
+									),
+									_React['default'].createElement(
+										'div',
+										{ id: 'checkout-dex-13', className: 'description' },
+										_React['default'].createElement(
+											'p',
+											null,
+											'Famous for hosting the cream of the crop in Irish traditional music.'
+										)
+									)
+								),
+								_React['default'].createElement(
+									'div',
+									{ className: 'checkout--flex-item' },
+									_React['default'].createElement(
+										'div',
+										{ id: 'checkout-title-14', 'data-value': '14', className: 'title', onMouseOver: this.mouseover.bind(null, 14), onMouseOut: this.mouseout.bind(null, 14) },
+										_React['default'].createElement(
+											'a',
+											{ href: 'http://www.groganspub.ie/', target: '_blank' },
+											'Grogans Pub'
+										)
+									),
+									_React['default'].createElement(
+										'div',
+										{ id: 'checkout-dex-14', className: 'description' },
+										_React['default'].createElement(
+											'p',
+											null,
+											'A warm and friendly atmosphere that you would expect from your local, but with the lively buzz and intensity of an authentic Dublin city pub.'
+										)
+									)
+								),
+								_React['default'].createElement(
+									'div',
+									{ className: 'checkout--flex-item' },
+									_React['default'].createElement(
+										'div',
+										{ id: 'checkout-title-15', 'data-value': '15', className: 'title', onMouseOver: this.mouseover.bind(null, 15), onMouseOut: this.mouseout.bind(null, 15) },
+										_React['default'].createElement(
+											'a',
+											{ href: 'http://www.thepalacebardublin.com/#home/', target: '_blank' },
+											'The Palace Bar Dublin Pub'
+										)
+									),
+									_React['default'].createElement(
+										'div',
+										{ id: 'checkout-dex-15', className: 'description' },
+										_React['default'].createElement(
+											'p',
+											null,
+											'This is an old-fashioned pub beloved by Dubliners, which is rare in Temple Bar. Upstairs, it’s entirely dedicated to Irish whiskey, and the guys that run the place love the uisce beatha so much they invented their own brew.'
+										)
+									)
+								),
+								_React['default'].createElement(
+									'div',
+									{ className: 'checkout--flex-item' },
+									_React['default'].createElement(
+										'div',
+										{ id: 'checkout-title-16', 'data-value': '16', className: 'title', onMouseOver: this.mouseover.bind(null, 16), onMouseOut: this.mouseout.bind(null, 16) },
+										_React['default'].createElement(
+											'a',
+											{ href: 'http://vintagecocktailclub.com/', target: '_blank' },
+											'Vintage Cocktail Club'
+										)
+									),
+									_React['default'].createElement(
+										'div',
+										{ id: 'checkout-dex-16', className: 'description' },
+										_React['default'].createElement(
+											'p',
+											null,
+											'Vintage is rare find in Temple Bar, and there\'s no sign indicating this place even exists -- but if you know to knock on the black door, you’ll be escorted upstairs to a vintage paradise. The cocktails are fantastic (if not exactly cheap), and the smoking area is very cool too.'
+										)
+									)
+								),
 								_React['default'].createElement(
 									'div',
 									{ className: 'checkout--flex-item' },
@@ -433,28 +564,6 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 											'Sophie’s is a beautiful and modern glasshouse restaurant, boasting stunning 360 degree views of Dublin, from cityscape to countryside, it has an outlook like no other.'
 										)
 									)
-								),
-								_React['default'].createElement(
-									'div',
-									{ className: 'checkout--flex-item' },
-									_React['default'].createElement(
-										'div',
-										{ id: 'checkout-title-6', 'data-value': '6', className: 'title', onMouseOver: this.mouseover.bind(null, 6), onMouseOut: this.mouseout.bind(null, 6) },
-										_React['default'].createElement(
-											'a',
-											null,
-											'Italian Quarter'
-										)
-									),
-									_React['default'].createElement(
-										'div',
-										{ id: 'checkout-dex-6', className: 'description' },
-										_React['default'].createElement(
-											'p',
-											null,
-											'Great view of Dublin'
-										)
-									)
 								)
 							),
 							_React['default'].createElement(
@@ -484,6 +593,28 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 											'p',
 											null,
 											'The Storehouse covers seven floors surrounding a glass atrium shaped in the form of a pint of Guinness.'
+										)
+									)
+								),
+								_React['default'].createElement(
+									'div',
+									null,
+									_React['default'].createElement(
+										'div',
+										{ id: 'checkout-title-17', 'data-value': '17', className: 'title', onMouseOver: this.mouseover.bind(null, 17), onMouseOut: this.mouseout.bind(null, 17) },
+										_React['default'].createElement(
+											'a',
+											{ href: 'http://epicchq.com/about-epic-irish-emigration-museum/', target: '_blank' },
+											'Irish Emigration Museum'
+										)
+									),
+									_React['default'].createElement(
+										'div',
+										{ id: 'checkout-dex-17', className: 'description' },
+										_React['default'].createElement(
+											'p',
+											null,
+											' EPIC tells the dramatic story of the people who have left the island of Ireland, how these people spread around the globe, and how they influenced and shaped the world. It is a story of rich and poor, destinations near and far. It is a story of 10 million epic journeys. EPIC connects the 70 million people around the world today who claim Irish heritage and ancestry. Using state-of-the-art technology these stories are vividly brought to life through video, images and sound to create a powerful and emotional experience.'
 										)
 									)
 								),

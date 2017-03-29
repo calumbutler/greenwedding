@@ -122,7 +122,7 @@ button {
   top: 325px; }
 
 .hotels {
-  min-height: 1000px; }
+  min-height: 1200px; }
 
 .map {
   height: 1200px !important;
@@ -149,7 +149,7 @@ button {
     color: #e7c07d; }
 
 .checkout {
-  min-height: 220vh;
+  min-height: 300vh;
   background: url("../images/dublin-skyline.jpg") no-repeat 0 300px;
   background-size: 100% 90%;
   color: #303d45; }
