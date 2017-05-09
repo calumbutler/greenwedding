@@ -47,7 +47,7 @@ define(['exports', 'module', 'react', 'components/stlouis/actions', 'components/
 					_React['default'].createElement(
 						'h1',
 						{ className: 'tbd--title' },
-						'Spring 2018 details to follow'
+						'Memorial Day weekend 2018'
 					)
 				);
 			}
