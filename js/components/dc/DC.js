@@ -47,7 +47,7 @@ define(['exports', 'module', 'react', 'components/dc/actions', 'components/dc/st
 					_React['default'].createElement(
 						'h1',
 						{ className: 'tbd--title' },
-						'Details to be decided'
+						'March 2018'
 					)
 				);
 			}

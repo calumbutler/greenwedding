@@ -279,7 +279,7 @@ define(['exports', 'module', 'react', 'components/navigation/navigation', 'compo
 									),
 									_React['default'].createElement(
 										'a',
-										{ href: 'http://www.brookshotel.ie/ ', target: '_blank' },
+										{ href: 'http://www.themorgan.com/ ', target: '_blank' },
 										_React['default'].createElement('img', { src: 'images/themorgan.jpeg', height: '300', width: '275' })
 									),
 									_React['default'].createElement(
