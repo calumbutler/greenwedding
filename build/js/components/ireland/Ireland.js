@@ -183,7 +183,7 @@ define(['exports', 'module', 'react', 'components/ireland/actions', 'components/
 									_React['default'].createElement(
 										'b',
 										null,
-										'6:00pm'
+										'6:30pm'
 									),
 									' Cocktail hour begins at ',
 									_React['default'].createElement(
